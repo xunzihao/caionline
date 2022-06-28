@@ -39,7 +39,7 @@ koa+mongodb+……  （仍在开发）
         ├── images
         ├── icons
 └── src
-	├── __mocks__
+    └───__mocks__
 	├── components
 	├── helpers
 	├── icons
@@ -54,17 +54,17 @@ koa+mongodb+……  （仍在开发）
 	        ├── logout.js
 	        ├── register.js
 	        └── user.js
-		├── 404.js
-		├── _app.js
-		├── _document.js
-		├── account.js
-		├── customers.js
-		├── index.js
-		├── login.js
-		├── products.js
-		├── register.js
-		├── reportWebVitals.js
-		└── settings.js
+	    ├── 404.js
+	    ├── _app.js
+	    ├── _document.js
+	    ├── account.js
+	    ├── customers.js
+	    ├── index.js
+	    ├── login.js
+	    ├── products.js
+	    ├── register.js
+	    ├── reportWebVitals.js
+	    └── settings.js
 		
 ```
 ### 后端目录结构
