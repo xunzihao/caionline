@@ -10,7 +10,7 @@ axios.interceptors.request.use(
         config.body = JSON.stringify(config.data);
         // config.headers = {
         //     "Content-Type": "application/json",
-        // };        
+        // };
            // config.headers.token = 'xxxxxxxxxxxxxxxxxxxxxxx';
         // }
         return config;
@@ -67,6 +67,7 @@ export function post(url, data) {
     return new Promise((resolve, reject) => {
         axios.post(url, data).then(
             (response) => {
+              console.log('post response', response)
                 resolve(response.data);
             },
             (err) => {
