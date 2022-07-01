@@ -20,12 +20,26 @@ const items = [
   {
     href: '/',
     icon: (<ChartBarIcon fontSize="small" />),
-    title: 'Dashboard'
+    title: '首页'
   },
-  // {
-  //   href: '/customers',
-  //   icon: (<UsersIcon fontSize="small" />),
-  //   title: 'Customers'
+  {
+    href: '/Classes',
+    icon: (<UsersIcon fontSize="small" />),
+    title: '班级'
+  },
+  {
+    href: '/Courses',
+    icon: (<ShoppingBagIcon fontSize="small" />),
+    title: '课程'
+  },
+  {
+    href: '/activity',
+    title:'活动',
+  },
+  //  {
+  //  href: '/customers',
+  //  icon: (<UsersIcon fontSize="small" />),
+  //  title: 'Customers'
   // },
   // {
   //   href: '/products',
@@ -40,7 +54,7 @@ const items = [
   {
     href: '/students',
     icon: (<UsersIcon fontSize="small" />),
-    title: 'Students'
+    title: '学生'
   }
 ];
 
