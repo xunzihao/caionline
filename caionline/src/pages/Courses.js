@@ -3,7 +3,6 @@ import { Box, Container } from '@mui/material';
 import { CustomerListResults } from '../components/customer/customer-list-results';
 import { CustomerListToolbar } from '../components/customer/customer-list-toolbar';
 import { DashboardLayout } from '../components/dashboard-layout';
-import { customers } from '../__mocks__/customers';
 import * as serviceKit from '../services'
 import { useQuery } from 'react-query'
 const Courses = () => {
@@ -12,7 +11,7 @@ const Courses = () => {
     isFetching,
     isError,
     data
-  } = useQuery(['serviceKit.customerServices.getAllUseQuery', {}], serviceKit.customerServices.getAllUseQuery)
+  } = useQuery(['serviceKit.courseServices.getAllUseQuery', {}], serviceKit.courseServices.getAllUseQuery)
   return (
     <>
       <Head>
