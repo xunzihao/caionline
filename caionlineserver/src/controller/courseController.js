@@ -8,7 +8,7 @@ class CoursesController{
         ctx.body = courses;
     }
     static async testAdd(ctx){
-        course = new Course({title: "测试课程1", teacher: "老师1", description: "说明1", tags: []});
+        let course = new Course({title: "测试课程1", teacher: "老师1", description: "说明1", tags: []});
         let rtn=await course.save();
         ctx.body=rtn;
     }

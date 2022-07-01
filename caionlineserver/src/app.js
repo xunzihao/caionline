@@ -9,6 +9,7 @@ import customer from './router/customer'
 import './dbHelper'
 import responseFilter from './middleware/responseFilter'
 import { jwtConfig } from "./config/index";
+import course from "./router/course";
 
 const app = new Koa()
 app.use(cors())
@@ -25,5 +26,6 @@ app.use(responseFilter())
 app.use(sign.routes()).use(sign.allowedMethods())
 app.use(user.routes()).use(user.allowedMethods())
 app.use(customer.routes()).use(customer.allowedMethods())
+app.use(course.routes()).use(course.allowedMethods())
 
 export default app
