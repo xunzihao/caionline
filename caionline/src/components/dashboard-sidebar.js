@@ -22,20 +22,25 @@ const items = [
     icon: (<ChartBarIcon fontSize="small" />),
     title: 'Dashboard'
   },
+  // {
+  //   href: '/customers',
+  //   icon: (<UsersIcon fontSize="small" />),
+  //   title: 'Customers'
+  // },
+  // {
+  //   href: '/products',
+  //   icon: (<ShoppingBagIcon fontSize="small" />),
+  //   title: 'Products'
+  // },
+  // {
+  //   href: '/settings',
+  //   icon: (<CogIcon fontSize="small" />),
+  //   title: 'Settings'
+  // },
   {
-    href: '/customers',
+    href: '/students',
     icon: (<UsersIcon fontSize="small" />),
-    title: 'Customers'
-  },
-  {
-    href: '/products',
-    icon: (<ShoppingBagIcon fontSize="small" />),
-    title: 'Products'
-  },
-  {
-    href: '/settings',
-    icon: (<CogIcon fontSize="small" />),
-    title: 'Settings'
+    title: 'Students'
   }
 ];
 
@@ -105,9 +110,9 @@ export const DashboardSidebar = (props) => {
                   variant="subtitle1"
                 >
                   线上教学辅助
-                </Typography>                
+                </Typography>
               </div>
-             
+
             </Box>
           </Box>
         </div>
@@ -133,7 +138,7 @@ export const DashboardSidebar = (props) => {
             px: 2,
             py: 3
           }}
-        >    
+        >
         </Box>
       </Box>
     </>
