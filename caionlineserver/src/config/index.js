@@ -1,4 +1,4 @@
-export const DB_URL = 'mongodb://localhost:27017/caionline';
+export const DB_URL = 'mongodb://localhost:30000/caionline';
 
 export const defaultSchemaExtend = {
   createTime: {

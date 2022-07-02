@@ -12,7 +12,6 @@ const ProductSchema = new Schema(Object.assign({
   price: Number,
   category: String,
   quantity: Number,
-  price: Number,
   rating: Number,
   inventoryStatus: String
 }, defaultSchemaExtend), defaultSchemaOptions);

@@ -13,9 +13,9 @@ class ProductsController {
     let insertings = products.filter(p => p.state === 'new');
     let deleteings = products.filter(p => p.state === 'deleted');
     let updateings = products.filter(p => p.state === 'modified');
-    insertings.forEach(async element => {      
+    insertings.forEach(async element => {
       delete element.state
-      let np = new Product({ element })
+      let np = new Product({...element});
       await np.save()
     });
     updateings.forEach(async up => {
