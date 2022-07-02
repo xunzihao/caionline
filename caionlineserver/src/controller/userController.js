@@ -4,7 +4,7 @@ import ApiErrorNames from "../error/ApiErrorNames";
 
 class UserController {
 
-  static async getAllUser(ctx) {
+  static async getAllUser(ctx) {  //(req,res,next)
     ctx.body = await User.find({})
   }
 
