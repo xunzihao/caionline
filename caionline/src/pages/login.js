@@ -41,10 +41,12 @@ const Login = () => {
         console.log('signclient=', sign)
         if (sign.token && sign.isLoggedIn) {
           axios.defaults.headers.common['Authorization'] = sign.token;
+          window.localStorage.setItem('caionlineToken',sign.token);
           Router.push('/');
         }
         else {
           delete axios.defaults.headers.common['Authorization'];
+          window.localStorage.removeItem('caionlineToken',sign.token);
           alert('请检查账号信息是否正确！')
         }
       } catch (error) {

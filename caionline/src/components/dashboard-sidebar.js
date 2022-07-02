@@ -20,41 +20,32 @@ const items = [
   {
     href: '/',
     icon: (<ChartBarIcon fontSize="small" />),
-    title: '首页'
+    title: 'Dashboard'
   },
   {
-    href: '/Classes',
+    href: '/productDemo',
     icon: (<UsersIcon fontSize="small" />),
-    title: '班级'
+    title: '商品管理演示'
   },
   {
-    href: '/Courses',
+    href: '/courses',
+    icon: (<UsersIcon fontSize="small" />),
+    title: '课程管理'
+  },
+  {
+    href: '/customers',
+    icon: (<UsersIcon fontSize="small" />),
+    title: 'Customers'
+  },
+  {
+    href: '/products',
     icon: (<ShoppingBagIcon fontSize="small" />),
-    title: '课程'
+    title: 'Products'
   },
   {
-    href: '/activity',
-    title:'活动',
-  },
-  //  {
-  //  href: '/customers',
-  //  icon: (<UsersIcon fontSize="small" />),
-  //  title: 'Customers'
-  // },
-  // {
-  //   href: '/products',
-  //   icon: (<ShoppingBagIcon fontSize="small" />),
-  //   title: 'Products'
-  // },
-  // {
-  //   href: '/settings',
-  //   icon: (<CogIcon fontSize="small" />),
-  //   title: 'Settings'
-  // },
-  {
-    href: '/students',
-    icon: (<UsersIcon fontSize="small" />),
-    title: '学生'
+    href: '/settings',
+    icon: (<CogIcon fontSize="small" />),
+    title: 'Settings'
   }
 ];
 
@@ -124,9 +115,9 @@ export const DashboardSidebar = (props) => {
                   variant="subtitle1"
                 >
                   线上教学辅助
-                </Typography>
+                </Typography>                
               </div>
-
+             
             </Box>
           </Box>
         </div>
@@ -152,7 +143,7 @@ export const DashboardSidebar = (props) => {
             px: 2,
             py: 3
           }}
-        >
+        >    
         </Box>
       </Box>
     </>

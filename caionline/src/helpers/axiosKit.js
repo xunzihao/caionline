@@ -8,10 +8,12 @@ axios.defaults.baseURL = "http://localhost:3006/";
 axios.interceptors.request.use(
     (config) => {
         config.body = JSON.stringify(config.data);
+        //let token = window.sessionStorage.getItem('caionlineToken');
+       // console.log('Token',token);
         // config.headers = {
         //     "Content-Type": "application/json",
-        // };
-           // config.headers.token = 'xxxxxxxxxxxxxxxxxxxxxxx';
+        // };        
+       // config.headers.token = token;
         // }
         return config;
     },
@@ -63,11 +65,9 @@ export function get(url, params = {}) {
  */
 
 export function post(url, data) {
-    console.log('post data', data)
     return new Promise((resolve, reject) => {
         axios.post(url, data).then(
             (response) => {
-              console.log('post response', response)
                 resolve(response.data);
             },
             (err) => {

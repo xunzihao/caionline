@@ -9,13 +9,19 @@ import { theme } from '../theme';
 import reportWebVitals from './reportWebVitals';
 import { ReactQueryDevtools } from 'react-query/devtools'
 import { QueryClientProvider, QueryClient } from 'react-query'
+import { axios } from '../helpers/axiosKit'
+
 const queryClient = new QueryClient()
 const clientSideEmotionCache = createEmotionCache();
 
 const App = (props) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   const getLayout = Component.getLayout ?? ((page) => page);
-  
+  App.getStaticProps = () => {
+    const token = window.localStorage.getItem('caionlineToken');
+    console.log('app token :', token);
+    axios.defaults.headers.common['Authorization'] = sign.token;
+  }
   return (
     <QueryClientProvider client={queryClient}>
       <CacheProvider value={emotionCache}>

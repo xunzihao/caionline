@@ -10,7 +10,7 @@ mongoose.connect(DB_URL, {
 
 // 连接成功
 mongoose.connection.on('connected', function () {
-  console.log('Mongoose connection open to ', DB_URL);
+  console.log('已经打开Mongo数据库 ', DB_URL);
 });
 
 // 连接异常
