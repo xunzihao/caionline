@@ -7,8 +7,8 @@ const router = new Router();
 router.prefix('/api/product');
 
 router
-  .get('/getAll', ProductsController.getAll)
-  .post('/update', ProductsController.update)
-  .get('/init', ProductsController.init)
+    .get('/getAll', ProductsController.getAll)
+    .post('/update', ProductsController.update)
+    .get('/init', ProductsController.init)
 
 export default router;

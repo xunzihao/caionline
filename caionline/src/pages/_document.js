@@ -3,9 +3,8 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
 import { createEmotionCache } from '../utils/create-emotion-cache';
 
+import reportWebVitals from './reportWebVitals';
 
-
-import reportWebVitals from './reportWebVitals'
 class CustomDocument extends Document {
   render() {
     return (
@@ -53,10 +52,10 @@ class CustomDocument extends Document {
             content="#111827"
           />
         </Head>
-          <body>
-            <Main />
-            <NextScript />
-          </body>
+        <body>
+        <Main/>
+        <NextScript/>
+        </body>
       </Html>
     );
   }
@@ -68,7 +67,7 @@ CustomDocument.getInitialProps = async (ctx) => {
   const { extractCriticalToChunks } = createEmotionServer(cache);
 
   ctx.renderPage = () => originalRenderPage({
-    enhanceApp: (App) => (props) => (     
+    enhanceApp: (App) => (props) => (
       <App
         emotionCache={cache}
         {...props}

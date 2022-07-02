@@ -1,6 +1,5 @@
-
 import { useEffect } from 'react';
-import { useQuery } from 'react-query'
+import { useQuery } from 'react-query';
 import Head from 'next/head';
 import NextLink from 'next/link';
 import Router from 'next/router';
@@ -9,8 +8,9 @@ import * as Yup from 'yup';
 import { Box, Button, Container, Grid, Link, TextField, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-import { axios } from '../helpers/axiosKit'
-import fetchJson, { FetchError } from '../lib/fetchJson'
+import { axios } from '../helpers/axiosKit';
+import fetchJson, { FetchError } from '../lib/fetchJson';
+
 const Login = () => {
   const formik = useFormik({
     initialValues: {
@@ -36,18 +36,17 @@ const Login = () => {
         let sign = await fetchJson('/api/login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(values),
-        })
-        console.log('signclient=', sign)
+          body: JSON.stringify(values)
+        });
+        console.log('signclient=', sign);
         if (sign.token && sign.isLoggedIn) {
           axios.defaults.headers.common['Authorization'] = sign.token;
-          window.localStorage.setItem('caionlineToken',sign.token);
+          window.localStorage.setItem('caionlineToken', sign.token);
           Router.push('/');
-        }
-        else {
+        } else {
           delete axios.defaults.headers.common['Authorization'];
-          window.localStorage.removeItem('caionlineToken',sign.token);
-          alert('请检查账号信息是否正确！')
+          window.localStorage.removeItem('caionlineToken', sign.token);
+          alert('请检查账号信息是否正确！');
         }
       } catch (error) {
         console.error('An unexpected error happened:', error);
@@ -76,7 +75,7 @@ const Login = () => {
           >
             <Button
               component="a"
-              startIcon={<ArrowBackIcon fontSize="small" />}
+              startIcon={<ArrowBackIcon fontSize="small"/>}
             >
               Dashboard
             </Button>

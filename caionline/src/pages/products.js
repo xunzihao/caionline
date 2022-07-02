@@ -20,7 +20,7 @@ const Products = () => (
       }}
     >
       <Container maxWidth={false}>
-        <ProductListToolbar />
+        <ProductListToolbar/>
         <Box sx={{ pt: 3 }}>
           <Grid
             container
@@ -34,7 +34,7 @@ const Products = () => (
                 md={6}
                 xs={12}
               >
-                <ProductCard product={product} />
+                <ProductCard product={product}/>
               </Grid>
             ))}
           </Grid>

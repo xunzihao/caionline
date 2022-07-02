@@ -27,10 +27,9 @@ const SearchbarStyle = styled('div')(({ theme }) => ({
   backgroundColor: `${alpha(theme.palette.background.default, 0.72)}`,
   [theme.breakpoints.up('md')]: {
     height: APPBAR_DESKTOP,
-    padding: theme.spacing(0, 5),
-  },
+    padding: theme.spacing(0, 5)
+  }
 }));
-
 
 // ----------------------------------------------------------------------
 
@@ -51,15 +50,15 @@ export default function Searchbar() {
         {!isOpen && (
           <IconButton onClick={handleOpen}>
             <Iconify icon="eva:search-fill"
-              width={20}
-              height={20} />
+                     width={20}
+                     height={20}/>
           </IconButton>
         )}
 
         <Slide direction="down"
-          in={isOpen}
-          mountOnEnter
-          unmountOnExit>
+               in={isOpen}
+               mountOnEnter
+               unmountOnExit>
           <SearchbarStyle>
             <Input
               autoFocus
@@ -69,17 +68,17 @@ export default function Searchbar() {
               startAdornment={
                 <InputAdornment position="start">
                   <Iconify icon="eva:search-fill"
-                    sx={{
-                      color: 'text.disabled',
-                      width: 20,
-                      height: 20
-                    }} />
+                           sx={{
+                             color: 'text.disabled',
+                             width: 20,
+                             height: 20
+                           }}/>
                 </InputAdornment>
               }
               sx={{ mr: 1, fontWeight: 'fontWeightBold' }}
             />
             <Button variant="contained"
-              onClick={handleClose}>
+                    onClick={handleClose}>
               Search
             </Button>
           </SearchbarStyle>

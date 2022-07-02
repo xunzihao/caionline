@@ -54,7 +54,7 @@ export const LatestProducts = (props) => (
       subtitle={`${products.length} in total`}
       title="Latest Products"
     />
-    <Divider />
+    <Divider/>
     <List>
       {products.map((product, i) => (
         <ListItem
@@ -79,12 +79,12 @@ export const LatestProducts = (props) => (
             edge="end"
             size="small"
           >
-            <MoreVertIcon />
+            <MoreVertIcon/>
           </IconButton>
         </ListItem>
       ))}
     </List>
-    <Divider />
+    <Divider/>
     <Box
       sx={{
         display: 'flex',
@@ -94,7 +94,7 @@ export const LatestProducts = (props) => (
     >
       <Button
         color="primary"
-        endIcon={<ArrowRightIcon />}
+        endIcon={<ArrowRightIcon/>}
         size="small"
         variant="text"
       >

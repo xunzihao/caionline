@@ -1,5 +1,3 @@
-
-
 import Head from 'next/head';
 import { Box, Container, Grid } from '@mui/material';
 import { Budget } from '../components/dashboard/budget';
@@ -11,8 +9,9 @@ import { TotalCustomers } from '../components/dashboard/total-customers';
 import { TotalProfit } from '../components/dashboard/total-profit';
 import { TrafficByDevice } from '../components/dashboard/traffic-by-device';
 import { DashboardLayout } from '../components/dashboard-layout';
+
 const Dashboard = () => {
- 
+
   return (
     <>
       <Head>
@@ -39,7 +38,7 @@ const Dashboard = () => {
               xl={3}
               xs={12}
             >
-              <Budget />
+              <Budget/>
             </Grid>
             <Grid
               item
@@ -48,7 +47,7 @@ const Dashboard = () => {
               sm={6}
               xs={12}
             >
-              <TotalCustomers />
+              <TotalCustomers/>
             </Grid>
             <Grid
               item
@@ -57,7 +56,7 @@ const Dashboard = () => {
               sm={6}
               xs={12}
             >
-              <TasksProgress />
+              <TasksProgress/>
             </Grid>
             <Grid
               item
@@ -66,7 +65,7 @@ const Dashboard = () => {
               sm={6}
               xs={12}
             >
-              <TotalProfit sx={{ height: '100%' }} />
+              <TotalProfit sx={{ height: '100%' }}/>
             </Grid>
             <Grid
               item
@@ -75,7 +74,7 @@ const Dashboard = () => {
               xl={9}
               xs={12}
             >
-              <Sales />
+              <Sales/>
             </Grid>
             <Grid
               item
@@ -84,7 +83,7 @@ const Dashboard = () => {
               xl={3}
               xs={12}
             >
-              <TrafficByDevice sx={{ height: '100%' }} />
+              <TrafficByDevice sx={{ height: '100%' }}/>
             </Grid>
             <Grid
               item
@@ -93,7 +92,7 @@ const Dashboard = () => {
               xl={3}
               xs={12}
             >
-              <LatestProducts sx={{ height: '100%' }} />
+              <LatestProducts sx={{ height: '100%' }}/>
             </Grid>
             <Grid
               item
@@ -102,14 +101,14 @@ const Dashboard = () => {
               xl={9}
               xs={12}
             >
-              <LatestOrders />
+              <LatestOrders/>
             </Grid>
           </Grid>
         </Container>
       </Box>
     </>
   );
-}
+};
 
 Dashboard.getLayout = (page) => (
   <DashboardLayout>

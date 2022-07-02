@@ -31,13 +31,13 @@ export const ProductListToolbar = (props) => (
       </Typography>
       <Box sx={{ m: 1 }}>
         <Button
-          startIcon={(<UploadIcon fontSize="small" />)}
+          startIcon={(<UploadIcon fontSize="small"/>)}
           sx={{ mr: 1 }}
         >
           Import
         </Button>
         <Button
-          startIcon={(<DownloadIcon fontSize="small" />)}
+          startIcon={(<DownloadIcon fontSize="small"/>)}
           sx={{ mr: 1 }}
         >
           Export
@@ -63,7 +63,7 @@ export const ProductListToolbar = (props) => (
                       fontSize="small"
                       color="action"
                     >
-                      <SearchIcon />
+                      <SearchIcon/>
                     </SvgIcon>
                   </InputAdornment>
                 )

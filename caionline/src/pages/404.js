@@ -60,7 +60,7 @@ const NotFound = () => (
           >
             <Button
               component="a"
-              startIcon={(<ArrowBackIcon fontSize="small" />)}
+              startIcon={(<ArrowBackIcon fontSize="small"/>)}
               sx={{ mt: 3 }}
               variant="contained"
             >

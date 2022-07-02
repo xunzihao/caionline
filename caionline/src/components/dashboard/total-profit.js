@@ -32,7 +32,7 @@ export const TotalProfit = (props) => (
               width: 56
             }}
           >
-            <AttachMoneyIcon />
+            <AttachMoneyIcon/>
           </Avatar>
         </Grid>
       </Grid>

@@ -1,4 +1,5 @@
 import Koa from 'koa'
+
 const path = require('path')
 import bodyParser from 'koa-bodyparser'
 import logger from 'koa-logger'
@@ -11,13 +12,13 @@ import course from './router/course'
 import product from './router/product'
 import './dbHelper'
 import responseFilter from './middleware/responseFilter'
-import { jwtConfig } from "./config/index";
+import {jwtConfig} from "./config/index";
 
 const app = new Koa()
 app.use(cors())
 app.use(bodyParser())
-let staticPath = path.join(__dirname,'./static/')
-console.log('path',staticPath)
+let staticPath = path.join(__dirname, './static/')
+console.log('path', staticPath)
 app.use(require("koa-static")(staticPath));
 // app.use(jwtKoa({secret: jwtConfig}).unless({
 //   path: [/^\/api\/login/] //数组中的路径不需要通过jwt验证

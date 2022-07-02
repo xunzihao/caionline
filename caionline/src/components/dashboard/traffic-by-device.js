@@ -65,8 +65,8 @@ export const TrafficByDevice = (props) => {
 
   return (
     <Card {...props}>
-      <CardHeader title="Traffic by Device" />
-      <Divider />
+      <CardHeader title="Traffic by Device"/>
+      <Divider/>
       <CardContent>
         <Box
           sx={{
@@ -99,7 +99,7 @@ export const TrafficByDevice = (props) => {
                 textAlign: 'center'
               }}
             >
-              <Icon color="action" />
+              <Icon color="action"/>
               <Typography
                 color="textPrimary"
                 variant="body1"

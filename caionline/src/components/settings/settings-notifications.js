@@ -18,7 +18,7 @@ export const SettingsNotifications = (props) => (
         subheader="Manage the notifications"
         title="Notifications"
       />
-      <Divider />
+      <Divider/>
       <CardContent>
         <Grid
           container
@@ -61,7 +61,7 @@ export const SettingsNotifications = (props) => (
               label="Push Notifications"
             />
             <FormControlLabel
-              control={<Checkbox />}
+              control={<Checkbox/>}
               label="Text Messages"
             />
             <FormControlLabel
@@ -101,7 +101,7 @@ export const SettingsNotifications = (props) => (
               label="Email"
             />
             <FormControlLabel
-              control={<Checkbox />}
+              control={<Checkbox/>}
               label="Push Notifications"
             />
             <FormControlLabel
@@ -116,7 +116,7 @@ export const SettingsNotifications = (props) => (
           </Grid>
         </Grid>
       </CardContent>
-      <Divider />
+      <Divider/>
       <Box
         sx={{
           display: 'flex',

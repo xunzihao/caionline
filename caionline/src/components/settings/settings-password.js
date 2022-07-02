@@ -21,7 +21,7 @@ export const SettingsPassword = (props) => {
           subheader="Update password"
           title="Password"
         />
-        <Divider />
+        <Divider/>
         <CardContent>
           <TextField
             fullWidth
@@ -44,7 +44,7 @@ export const SettingsPassword = (props) => {
             variant="outlined"
           />
         </CardContent>
-        <Divider />
+        <Divider/>
         <Box
           sx={{
             display: 'flex',

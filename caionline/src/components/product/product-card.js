@@ -42,8 +42,8 @@ export const ProductCard = ({ product, ...rest }) => (
         {product.description}
       </Typography>
     </CardContent>
-    <Box sx={{ flexGrow: 1 }} />
-    <Divider />
+    <Box sx={{ flexGrow: 1 }}/>
+    <Divider/>
     <Box sx={{ p: 2 }}>
       <Grid
         container
@@ -57,7 +57,7 @@ export const ProductCard = ({ product, ...rest }) => (
             display: 'flex'
           }}
         >
-          <ClockIcon color="action" />
+          <ClockIcon color="action"/>
           <Typography
             color="textSecondary"
             display="inline"
@@ -74,7 +74,7 @@ export const ProductCard = ({ product, ...rest }) => (
             display: 'flex'
           }}
         >
-          <DownloadIcon color="action" />
+          <DownloadIcon color="action"/>
           <Typography
             color="textSecondary"
             display="inline"

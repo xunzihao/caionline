@@ -25,9 +25,9 @@ const Settings = () => (
         >
           Settings
         </Typography>
-        <SettingsNotifications />
+        <SettingsNotifications/>
         <Box sx={{ pt: 3 }}>
-          <SettingsPassword />
+          <SettingsPassword/>
         </Box>
       </Container>
     </Box>

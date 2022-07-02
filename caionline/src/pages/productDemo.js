@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import { Box, Container } from '@mui/material';
 import { DashboardLayout } from '../components/dashboard-layout';
-import ProductDemo from '../components/ProductDemo/ProductDemo'
-const Courses = () => {  
+import ProductDemo from '../components/ProductDemo/ProductDemo';
+
+const Courses = () => {
   return (
     <>
       <Head>
@@ -17,7 +18,7 @@ const Courses = () => {
           py: 8
         }}
       >
-        <Container maxWidth={false}>          
+        <Container maxWidth={false}>
           <Box sx={{ mt: 3 }}>
             <ProductDemo/>
           </Box>
@@ -25,7 +26,7 @@ const Courses = () => {
       </Box>
     </>
   );
-}
+};
 Courses.getLayout = (page) => (
   <DashboardLayout>
     {page}

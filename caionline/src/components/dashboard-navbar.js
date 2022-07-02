@@ -46,18 +46,18 @@ export const DashboardNavbar = (props) => {
               }
             }}
           >
-            <MenuIcon fontSize="small" />
+            <MenuIcon fontSize="small"/>
           </IconButton>
           <Searchbar/>
-          <Box sx={{ flexGrow: 1 }} />
+          <Box sx={{ flexGrow: 1 }}/>
           <IconButton sx={{ ml: 1 }}>
-            <UsersIcon fontSize="small" />
+            <UsersIcon fontSize="small"/>
           </IconButton>
           <Box sx={{ ml: 1 }}>
-            <NotificationsPopover />
+            <NotificationsPopover/>
           </Box>
           <Box sx={{ ml: 1 }}>
-            <AccountPopover />
+            <AccountPopover/>
           </Box>
         </Toolbar>
       </DashboardNavbarRoot>

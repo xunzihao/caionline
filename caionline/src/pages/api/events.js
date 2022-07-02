@@ -1,16 +1,15 @@
-import { withIronSessionApiRoute } from 'iron-session/next'
-import { ironOptions } from '../../lib/session'
-import  serviceKit from '../../services/serviceKit'
+import { withIronSessionApiRoute } from 'iron-session/next';
+import { ironOptions } from '../../lib/session';
+import serviceKit from '../../services/serviceKit';
 
-
-export default withIronSessionApiRoute(eventsRoute, ironOptions)
+export default withIronSessionApiRoute(eventsRoute, ironOptions);
 
 async function eventsRoute(req, res) {
-  const user = req.session.user
+  const user = req.session.user;
 
   if (!user || user.isLoggedIn === false) {
-    res.status(401).end()
-    return
+    res.status(401).end();
+    return;
   }
 
   try {
@@ -19,8 +18,8 @@ async function eventsRoute(req, res) {
     //     username: user.login,
     //   })
 
-    res.json('events')
+    res.json('events');
   } catch (error) {
-    res.status(200).json([])
+    res.status(200).json([]);
   }
 }

@@ -35,7 +35,7 @@ export const TasksProgress = (props) => (
               width: 56
             }}
           >
-            <InsertChartIcon />
+            <InsertChartIcon/>
           </Avatar>
         </Grid>
       </Grid>

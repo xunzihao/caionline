@@ -7,8 +7,8 @@ const router = new Router();
 router.prefix('/api/user');
 
 router
-  .get('/getAll', UserController.getAllUser)
-  .post('/saveUser', verify, UserController.saveUser)
-  .get('/getUserById', UserController.getUserById)
+    .get('/getAll', UserController.getAllUser)
+    .post('/saveUser', verify, UserController.saveUser)
+    .get('/getUserById', UserController.getUserById)
 
 export default router;

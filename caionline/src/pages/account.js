@@ -35,7 +35,7 @@ const Account = () => (
             md={6}
             xs={12}
           >
-            <AccountProfile />
+            <AccountProfile/>
           </Grid>
           <Grid
             item
@@ -43,7 +43,7 @@ const Account = () => (
             md={6}
             xs={12}
           >
-            <AccountProfileDetails />
+            <AccountProfileDetails/>
           </Grid>
         </Grid>
       </Container>

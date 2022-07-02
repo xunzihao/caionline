@@ -7,6 +7,6 @@ const router = new Router();
 router.prefix('/api/customer');
 
 router
-  .get('/getAll', verify, CustomerController.getAll)
+    .get('/getAll', verify, CustomerController.getAll)
 
 export default router;

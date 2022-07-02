@@ -36,7 +36,7 @@ export const Budget = (props) => (
               width: 56
             }}
           >
-            <MoneyIcon />
+            <MoneyIcon/>
           </Avatar>
         </Grid>
       </Grid>
@@ -47,7 +47,7 @@ export const Budget = (props) => (
           alignItems: 'center'
         }}
       >
-        <ArrowDownwardIcon color="error" />
+        <ArrowDownwardIcon color="error"/>
         <Typography
           color="error"
           sx={{

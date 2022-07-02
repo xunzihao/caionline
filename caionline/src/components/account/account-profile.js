@@ -57,7 +57,7 @@ export const AccountProfile = (props) => (
         </Typography>
       </Box>
     </CardContent>
-    <Divider />
+    <Divider/>
     <CardActions>
       <Button
         color="primary"

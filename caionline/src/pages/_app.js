@@ -1,17 +1,17 @@
 import Head from 'next/head';
 import { CacheProvider } from '@emotion/react';
-import { LocalizationProvider } from '@mui/x-date-pickers'
+import { LocalizationProvider } from '@mui/x-date-pickers';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import { CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import { createEmotionCache } from '../utils/create-emotion-cache';
 import { theme } from '../theme';
 import reportWebVitals from './reportWebVitals';
-import { ReactQueryDevtools } from 'react-query/devtools'
-import { QueryClientProvider, QueryClient } from 'react-query'
-import { axios } from '../helpers/axiosKit'
+import { ReactQueryDevtools } from 'react-query/devtools';
+import { QueryClientProvider, QueryClient } from 'react-query';
+import { axios } from '../helpers/axiosKit';
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient();
 const clientSideEmotionCache = createEmotionCache();
 
 const App = (props) => {
@@ -21,7 +21,7 @@ const App = (props) => {
     const token = window.localStorage.getItem('caionlineToken');
     console.log('app token :', token);
     axios.defaults.headers.common['Authorization'] = sign.token;
-  }
+  };
   return (
     <QueryClientProvider client={queryClient}>
       <CacheProvider value={emotionCache}>
@@ -36,11 +36,11 @@ const App = (props) => {
         </Head>
         <LocalizationProvider dateAdapter={AdapterDateFns}>
           <ThemeProvider theme={theme}>
-            <CssBaseline />
+            <CssBaseline/>
             {getLayout(<Component {...pageProps} />)}
           </ThemeProvider>
         </LocalizationProvider>
-        <ReactQueryDevtools />
+        <ReactQueryDevtools/>
       </CacheProvider>
     </QueryClientProvider>
   );

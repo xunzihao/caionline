@@ -7,7 +7,7 @@ const router = new Router();
 router.prefix('/api/course');
 
 router
-  .get('/getAll', verify, CoursesController.getAll)
-  .get('/testAdd', CoursesController.testAdd)
+    .get('/getAll', verify, CoursesController.getAll)
+    .get('/testAdd', CoursesController.testAdd)
 
 export default router;

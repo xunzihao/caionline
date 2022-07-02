@@ -19,32 +19,32 @@ import { NavItem } from './nav-item';
 const items = [
   {
     href: '/',
-    icon: (<ChartBarIcon fontSize="small" />),
+    icon: (<ChartBarIcon fontSize="small"/>),
     title: 'Dashboard'
   },
   {
     href: '/productDemo',
-    icon: (<UsersIcon fontSize="small" />),
+    icon: (<UsersIcon fontSize="small"/>),
     title: '商品管理演示'
   },
   {
     href: '/courses',
-    icon: (<UsersIcon fontSize="small" />),
+    icon: (<UsersIcon fontSize="small"/>),
     title: '课程管理'
   },
   {
     href: '/customers',
-    icon: (<UsersIcon fontSize="small" />),
+    icon: (<UsersIcon fontSize="small"/>),
     title: 'Customers'
   },
   {
     href: '/products',
-    icon: (<ShoppingBagIcon fontSize="small" />),
+    icon: (<ShoppingBagIcon fontSize="small"/>),
     title: 'Products'
   },
   {
     href: '/settings',
-    icon: (<CogIcon fontSize="small" />),
+    icon: (<CogIcon fontSize="small"/>),
     title: 'Settings'
   }
 ];
@@ -115,9 +115,9 @@ export const DashboardSidebar = (props) => {
                   variant="subtitle1"
                 >
                   线上教学辅助
-                </Typography>                
+                </Typography>
               </div>
-             
+
             </Box>
           </Box>
         </div>
@@ -137,13 +137,13 @@ export const DashboardSidebar = (props) => {
             />
           ))}
         </Box>
-        <Divider sx={{ borderColor: '#2D3748' }} />
+        <Divider sx={{ borderColor: '#2D3748' }}/>
         <Box
           sx={{
             px: 2,
             py: 3
           }}
-        >    
+        >
         </Box>
       </Box>
     </>

@@ -4,15 +4,17 @@ import { CustomerListResults } from '../components/customer/customer-list-result
 import { CustomerListToolbar } from '../components/customer/customer-list-toolbar';
 import { DashboardLayout } from '../components/dashboard-layout';
 import { customers } from '../__mocks__/customers';
-import * as serviceKit from '../services'
-import { useQuery } from 'react-query'
+import * as serviceKit from '../services';
+import { useQuery } from 'react-query';
+
 const Customers = () => {
   const {
     isLoading,
     isFetching,
     isError,
     data
-  } = useQuery(['serviceKit.customerServices.getAllUseQuery', {}], serviceKit.customerServices.getAllUseQuery)
+  } = useQuery(['serviceKit.customerServices.getAllUseQuery', {}],
+    serviceKit.customerServices.getAllUseQuery);
   return (
     <>
       <Head>
@@ -28,15 +30,15 @@ const Customers = () => {
         }}
       >
         <Container maxWidth={false}>
-          <CustomerListToolbar />
+          <CustomerListToolbar/>
           <Box sx={{ mt: 3 }}>
-            <CustomerListResults customers={!isFetching ? data?.data ? data.data : [] : []} />
+            <CustomerListResults customers={!isFetching ? data?.data ? data.data : [] : []}/>
           </Box>
         </Container>
       </Box>
     </>
   );
-}
+};
 Customers.getLayout = (page) => (
   <DashboardLayout>
     {page}
