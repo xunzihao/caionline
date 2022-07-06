@@ -4,7 +4,9 @@ import {defaultSchemaExtend, defaultSchemaOptions} from "../config/index";
 const Schema = mongoose.Schema;
 
 const CourseSchema = new Schema(Object.assign({
-    title: String,
+    id:String,
+    Status:String,
+    name: String,
     teacher: String,
     description: String,
     tags: {

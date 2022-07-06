@@ -8,7 +8,7 @@ const Courses = () => {
     <>
       <Head>
         <title>
-          课程管理 | 在线教学辅助
+          商品管理demo
         </title>
       </Head>
       <Box

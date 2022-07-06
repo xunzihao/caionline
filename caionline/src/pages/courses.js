@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import { Box, Container } from '@mui/material';
 import { DashboardLayout } from '../components/dashboard-layout';
-// import Course from '../components/ProductDemo/ProductDemo'
+import Course from '../components/courses/courses';
 const Courses = () => {
   return (
     <>
       <Head>
         <title>
-          课程管理 | 在线教学辅助
+          课程管理 | 在线教学辅助(demo)
         </title>
       </Head>
       <Box
@@ -19,7 +19,7 @@ const Courses = () => {
       >
         <Container maxWidth={false}>
           <Box sx={{ mt: 3 }}>
-            {/* <Course/> */}
+             <Course/>
           </Box>
         </Container>
       </Box>
