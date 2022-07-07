@@ -10,6 +10,7 @@ import sign from './router/sign'
 import customer from './router/customer'
 import course from './router/course'
 import product from './router/product'
+import classes from './router/classes'
 import './dbHelper'
 import responseFilter from './middleware/responseFilter'
 import {jwtConfig} from "./config/index";
@@ -33,5 +34,6 @@ app.use(user.routes()).use(user.allowedMethods())
 app.use(customer.routes()).use(customer.allowedMethods())
 app.use(course.routes()).use(course.allowedMethods())
 app.use(product.routes()).use(product.allowedMethods())
+app.use(classes.routes()).use(classes.allowedMethods())
 
 export default app

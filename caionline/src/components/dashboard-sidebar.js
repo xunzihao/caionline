@@ -28,6 +28,11 @@ const items = [
     title: '商品管理演示'
   },
   {
+    href: '/class',
+    icon: (<UsersIcon fontSize="small"/>),
+    title: '班级管理'
+  },
+  {
     href: '/courses',
     icon: (<UsersIcon fontSize="small"/>),
     title: '课程管理'

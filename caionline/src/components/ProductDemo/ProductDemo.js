@@ -49,6 +49,7 @@ function ProductDemo() {
   useEffect(() => {
     serviceKit.productServices.getAll().then(rtn => {
       let newProducts = [];
+      console.log(rtn)
       newProducts = rtn.data.map(r => {
         let np = { ...r };
         np.state = '';
