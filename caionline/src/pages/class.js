@@ -2,12 +2,12 @@ import Head from 'next/head';
 import { Box, Container } from '@mui/material';
 import { DashboardLayout } from '../components/dashboard-layout';
 import Class from '../components/Class/Class';
-const Courses = () => {
+const Classes = () => {
   return (
     <>
       <Head>
         <title>
-          课程管理 | 在线教学辅助(demo)
+          班级管理 | 在线教学辅助(demo)
         </title>
       </Head>
       <Box
@@ -26,10 +26,10 @@ const Courses = () => {
     </>
   );
 };
-Courses.getLayout = (page) => (
+Classes.getLayout = (page) => (
   <DashboardLayout>
     {page}
   </DashboardLayout>
 );
 
-export default Courses;
+export default Classes;

@@ -124,8 +124,8 @@ function Courses() {
   };
 
   const deleteCourse = () => {
-    let _Sources = Courses.filter(val => val.id !== Course.id);
-    setCourses(_Sources);
+    let _Courses = Courses.filter(val => val.id !== Course.id);
+    setCourses(_Courses);
     setDeleteCourseDialog(false);
     setCourse(emptyCourses);
     toast.current.show({
@@ -165,13 +165,13 @@ function Courses() {
   };
 
   const deleteSelectedCourses = () => {
-    let _Sources = Courses.filter(val => !selectedCourses.includes(val));
+    let _Courses = Courses.filter(val => !selectedCourses.includes(val));
     let _deletedCourses = Courses.filter(val => selectedCourses.includes(val));
     _deletedCourses = _deletedCourses.map(p => { return { ...p, state: 'deleted' }; });
     let _deletedCourse = [...deletedCourses];
     _deletedCourse.push(..._deletedCourses);
     setDeletedCourses(_deletedCourse);
-    setCourses(_Sources);
+    setCourses(_Courses);
     setDeleteCoursesDialog(false);
     setSelectedCourses(null);
     toast.current.show({
@@ -184,9 +184,9 @@ function Courses() {
 
   const onCategoryChange = (e) => {
     console.log(e.value);
-    let _Source = { ...Course };
-    _Source['Status'] = e.value;
-    setCourse(_Source);
+    let _Course = { ...Course };
+    _Course['Status'] = e.value;
+    setCourse(_Course);
   };
 
   const onInputChange = (e, name) => {
@@ -198,7 +198,7 @@ function Courses() {
 
   const statusBodyTemplate = (rowData) => {
     return <span
-      className={`Source status-${rowData.Status.toLowerCase()}`}>{rowData.Status}</span>;
+      className={`Course status-${rowData.Status.toLowerCase()}`}>{rowData.Status}</span>;
   };
 
   const actionBodyTemplate = (rowData) => {
@@ -288,7 +288,7 @@ function Courses() {
       </DataTable>
 
       <Dialog visible={CourseDialog} breakpoints={{ '960px': '75vw', '640px': '100vw' }}
-              style={{ width: '40vw' }} header="Source Details" modal className="p-fluid"
+              style={{ width: '40vw' }} header="Course Details" modal className="p-fluid"
               footer={CourseDialogFooter} onHide={hideDialog}>
         <div className="field">
           <label htmlFor="name">Name</label>

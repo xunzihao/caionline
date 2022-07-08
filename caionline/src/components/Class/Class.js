@@ -26,27 +26,8 @@ function Classes() {
     name: '',
     teacher: '',
     description: '',
-    // Status: 'OPEN',
     state: 'new'
   };
-
-  // const [Courses, setCourses] = useState(null);
-  // const [CourseCUDs, setCourseCUDs] = useState([]);
-  // const [CourseDialog, setCourseDialog] = useState(false);
-  // const [deleteCourseDialog, setDeleteCourseDialog] = useState(false);
-  // const [deleteCoursesDialog, setDeleteCoursesDialog] = useState(false);
-  // const [Course, setCourse] = useState(emptyCourses);
-  // const [selectedCourses, setSelectedCourses] = useState(null);
-  // const [submitted, setSubmitted] = useState(false);
-  // const [globalFilter, setGlobalFilter] = useState(null);
-  // const toast = useRef(null);
-  // const dt = useRef(null);
-  // const [deletedCourses, setDeletedCourses] = useState([]);
-  // const [refresh, SetRefresh] = useState(false);
-
-
-
-
 
   const [Classes, setClasses] = useState(null);
   const [classesCUDs, setclassesCUDs] = useState([]);
@@ -216,11 +197,6 @@ function Classes() {
     setclasses(_Course);
   };
 
-  // const statusBodyTemplate = (rowData) => {
-  //   return <span
-  //     className={`Source status-${rowData.Status.toLowerCase()}`}>{rowData.Status}</span>;
-  // };
-
   const actionBodyTemplate = (rowData) => {
     return (
       <React.Fragment>
@@ -304,8 +280,6 @@ function Classes() {
         <Column field="name" header="Name" sortable style={{ minWidth: '16rem' }}></Column>
         <Column field="description" header="Description" sortable style={{ minWidth: '16rem' }}></Column>
         <Column field="teacher" header="Teacher" sortable style={{ minWidth: '12rem' }}></Column>
-        {/*<Column field="Status" header="Status" body={statusBodyTemplate} sortable*/}
-        {/*        style={{ minWidth: '12rem' }}></Column>*/}
         <Column body={actionBodyTemplate} exportable={false} style={{ minWidth: '8rem' }}></Column>
       </DataTable>
 
@@ -331,25 +305,6 @@ function Classes() {
                          onChange={(e) => onInputChange(e, 'teacher')} required rows={3}
                          cols={20}/>
         </div>
-
-        {/*<div className="field">*/}
-        {/*  <label className="mb-3">Category</label>*/}
-        {/*  <div className="formgrid grid">*/}
-        {/*    <div className="field-radiobutton col-6">*/}
-        {/*      <RadioButton inputId="category1" name="category" value="OPEN"*/}
-        {/*                   onChange={onCategoryChange}*/}
-        {/*                   checked={classes.Status === '开启'}/>*/}
-        {/*      <label htmlFor="category1">开启</label>*/}
-        {/*    </div>*/}
-        {/*    <div className="field-radiobutton col-6">*/}
-        {/*      <RadioButton inputId="category2" name="category" value="CLOSE"*/}
-        {/*                   onChange={onCategoryChange} checked={classes.Status === '关闭'}/>*/}
-        {/*      <label htmlFor="category2">关闭</label>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-
-
       </Dialog>
 
       <Dialog visible={deleteclassesDialog} style={{ width: '450px' }} header="Confirm" modal
